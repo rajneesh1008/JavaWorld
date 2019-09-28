@@ -1,0 +1,12 @@
+package com.volvo.in.SpringdDemo;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+
+public class App1 {
+
+	public static void main(String[] args) {
+	  DefaultListableBeanFactory container = new DefaultListableBeanFactory();
+
+	}
+
+}

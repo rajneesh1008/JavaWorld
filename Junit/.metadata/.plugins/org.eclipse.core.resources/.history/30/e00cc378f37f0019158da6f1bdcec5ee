@@ -1,0 +1,22 @@
+package com.statestreet;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+class StringTest {
+
+@Test
+void lengthTest() {
+	String name = new String("inesolv");
+    int length = name.length();
+    assertEquals(8, length);
+}
+@Test
+void upperCaseTest() {
+   String name = new String("inetsolv");
+   String upperCase = name.toUpperCase();
+   assertEquals("INETSOLV", upperCase);
+	
+}
+}

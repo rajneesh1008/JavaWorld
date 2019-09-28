@@ -1,0 +1,15 @@
+package com.infy.factorydesign.Factorydesign_Annotation;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class PhoneFactory {
+	
+	@Bean
+	public Phone phone() {
+		Phone phone = new Phone();
+		return new Phone();
+	}
+
+}

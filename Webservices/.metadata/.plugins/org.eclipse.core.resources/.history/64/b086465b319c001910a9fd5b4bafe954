@@ -1,0 +1,17 @@
+package com.infosys;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import com.infosys.Employee.Employee;
+
+@Path(value="/employee")
+public class EmployeeService {
+
+	@GET
+	@Produces(value= {"application/json","application/xml"})
+	public Employee findEmployee() {
+		return new Employee(1, "Anil",10000d);
+	}
+}

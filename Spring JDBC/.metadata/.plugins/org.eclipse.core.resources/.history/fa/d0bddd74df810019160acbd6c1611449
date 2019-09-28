@@ -1,0 +1,24 @@
+package com.amazon.SimpleJDBCInsert;
+
+import java.util.HashMap;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	AnnotationConfigApplicationContext container=  new AnnotationConfigApplicationContext();
+    	SimpleJdbcInsert jdbcInsert = container.getBean(SimpleJdbcInsert.class);
+    	jdbcInsert.withTableName("EMP_TBL");
+    	Employee employee = new Employee();
+    	HashMap<String,Object> map=new HashMap<String,Object>();
+    	map.put("eno",employee.getEno());
+    	map.put("name",employee.getName());
+    	map.put("salary",employee.getSalary());
+    	jdbcInsert.execute(map);
+    	container.close();
+    }
+}

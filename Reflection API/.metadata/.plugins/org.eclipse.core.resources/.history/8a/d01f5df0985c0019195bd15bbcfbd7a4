@@ -1,0 +1,17 @@
+package com.reflection.annotation.Annotation;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
+public class App 
+{
+    public static void main( String[] args ) throws NoSuchMethodException, SecurityException
+    {
+        Class <COne> cls=COne.class;
+        Method method = cls.getMethod("methodOne",new Class[] {});
+        Annotation[] annotations = method.getAnnotations();
+        System.out.println(annotations.length);
+        String name = method.getName();
+        System.out.println(name);
+    }
+}

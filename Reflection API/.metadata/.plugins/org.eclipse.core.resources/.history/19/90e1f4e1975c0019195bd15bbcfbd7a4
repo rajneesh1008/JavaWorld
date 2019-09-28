@@ -1,0 +1,8 @@
+package com.reflection.annotation.Annotation;
+
+@MyAnnotation( name ="abc")
+public class COne {
+
+	public void methodOne() {
+	}
+}

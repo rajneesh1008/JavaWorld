@@ -1,0 +1,5 @@
+package com.wipro.Entity;
+
+public class Employee {
+
+}

@@ -1,0 +1,3 @@
+server.port = 8001
+spring.application.name = honeywell
+adp.ribbon.listOfServers = http://localhost:7001,http://localhost:7002,http://localhost:7003

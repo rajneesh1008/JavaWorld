@@ -1,0 +1,10 @@
+package com.wipro.Util1;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@ComponentScan(basePackages="com.wipro")
+@EnableTransactionManagement
+public class MOCUtil {
+
+}

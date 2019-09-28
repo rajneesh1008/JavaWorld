@@ -1,0 +1,21 @@
+package com.amazon.SpringJDBCResultSetExtractor;
+
+import java.util.List;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ClassPathXmlApplicationContext container= new ClassPathXmlApplicationContext("spring.xml");
+    	JdbcTemplate jdbcTemplate = container.getBean(JdbcTemplate.class);
+    	String query="select * from EMP_TBL";
+    	List<Employee> empList = jdbcTemplate.query(query, new EmployeeResultSetExtractor());
+    	empList.forEach(employee -> {
+    		System.out.println(employee.getSALARY());
+    	});
+    	container.close();
+    }
+}

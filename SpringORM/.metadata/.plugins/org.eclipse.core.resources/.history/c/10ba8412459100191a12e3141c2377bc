@@ -1,0 +1,22 @@
+package com.infosys.SpringHibernate;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.infosys.DAO.EmployeeDAO;
+import com.infosys.Entity.Employee;
+import com.infosys.Util.MOCUtil;
+
+public class App {
+	public static void main(String[] args) {
+
+		Employee employee = new Employee();
+		employee.setEno(99);
+		employee.setName("Kumar");
+		employee.setSalary(20000d);
+
+		AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext(MOCUtil.class);
+		EmployeeDAO employeeDAO = container.getBean(EmployeeDAO.class);
+		employeeDAO.save(employee);
+		container.close();
+	}
+}

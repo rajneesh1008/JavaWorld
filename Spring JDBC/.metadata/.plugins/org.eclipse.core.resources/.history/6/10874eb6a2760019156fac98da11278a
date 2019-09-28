@@ -1,0 +1,8 @@
+package com.hp;
+
+public class COne {
+	
+	public void methodOne(MyInterface myInterface) {
+		myInterface.doWork();
+	}
+}

@@ -1,0 +1,6 @@
+package com.reflection.annotation1.Annotations_2;
+
+@Person()
+public class COne {
+
+}

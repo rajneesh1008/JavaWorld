@@ -1,0 +1,27 @@
+package com.citi.corp.SpringCore7_Annotation;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Person {
+	
+	private Integer pid;
+	
+	public Person() {
+		System.out.println("Person Object is created");
+	}
+
+	public Integer getPid() {
+		return pid;
+	}
+
+	public void setPid(Integer pid) {
+		this.pid = pid;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [pid=" + pid + "]";
+	}
+
+}

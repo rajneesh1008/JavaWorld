@@ -1,0 +1,56 @@
+package com.bmc;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class EmployeeControllerServlet
+ */
+@WebServlet("/EmployeeControllerServlet")
+public class EmployeeControllerServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public EmployeeControllerServlet() {
+		super();
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		/* Get the Data from the Form */
+		String eno = request.getParameter("eno");
+		String name = request.getParameter("name");
+		String salary = request.getParameter("salary");
+		String gender = request.getParameter("gender");
+		String address = request.getParameter("address");
+
+		/* Set the Data into Employee Object */
+
+		Employee employee = new Employee();
+		employee.setEno(Integer.parseInt(eno));
+		employee.setName(name);
+		employee.setSalary(Double.parseDouble(salary));
+		employee.setGender(gender);
+		employee.setAddress(address);
+
+		EmployeeService employeeService = new EmployeeService();
+		int noOfRecordsStored = employeeService.save(employee);
+
+		if (noOfRecordsStored > 0) {
+			request.setAttribute("employee", employee);
+
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/jsps/empstore.jsp");
+			requestDispatcher.forward(request, response);
+		} else {
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/jsps/error.jsp");
+			requestDispatcher.forward(request, response);
+		}
+	}
+
+}

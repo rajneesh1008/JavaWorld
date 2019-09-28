@@ -1,0 +1,12 @@
+package com.statestreet;
+
+import org.junit.jupiter.api.Test;
+
+class StringTest {
+
+	@Test
+	void test() {
+		
+	}
+
+}

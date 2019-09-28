@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.log4j.Level"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="com.worldbank.log4j.EmployeeDataRetrieve"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.support.DefaultListableBeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader"/>
+</qualifiedTypeNameHistroy>

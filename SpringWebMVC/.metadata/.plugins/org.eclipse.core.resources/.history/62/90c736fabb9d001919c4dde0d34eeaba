@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Detail</title>
+</head>
+<body>
+<form action="emp" method="post">
+<div>
+<label>Employee No</label>
+<input type="text" name="employeeno"/>
+</div>
+<div>
+<label>Name</label>
+<input type="text" name="name"/>
+</div>
+<div>
+<label>Salary</label>
+<input type="text" name="salary"/>
+</div>
+<div>
+<label>Gender</label>
+<INPUT TYPE="radio" name="gender" value="Male"/>Male
+<INPUT TYPE="radio" name="gender" value="Female"/>Female
+<INPUT TYPE="radio" name="gender" value="Others"/>Others<br>
+</div>
+<div>
+<label>Address</label>
+<textarea rows="5" cols="20" name="address"></textarea>
+</div>
+<div>
+<button>Save Employee</button>
+</div>
+</form>
+
+</body>
+</html>

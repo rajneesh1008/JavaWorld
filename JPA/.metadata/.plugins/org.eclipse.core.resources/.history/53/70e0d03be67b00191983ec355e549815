@@ -1,0 +1,48 @@
+package com.lenovo;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class App {
+
+	public static void main(String[] args) {
+	
+				
+				Employee employee = new Employee();
+				employee.setName("Bharat");
+				employee.setSalary(new BigDecimal(20000d));
+				
+				Address address1 = new Address();
+				address1.setAid(6);
+				address1.setStreet("Janakpuri");
+				address1.setState("New Delhi");
+				address1.setEmpTbl(employee);
+				
+				Address address2 = new Address();
+				address2.setAid(4);
+				address2.setStreet("Chankyapuri");
+				address2.setState("New Delhi");
+				address2.setEmpTbl(employee);
+				
+				ArrayList<Address> empList = new ArrayList<Address>();
+				empList.add(address1);
+				empList.add(address2);
+				employee.setAddressTbls(empList);
+				
+				EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("OneToMany");
+				EntityManager entityManager = entityManagerFactory.createEntityManager();
+				entityManager.getTransaction().begin();
+				entityManager.persist(employee);
+				entityManager.getTransaction().commit();
+				entityManager.close();
+				entityManagerFactory.close();
+
+			}
+
+		}
+
+

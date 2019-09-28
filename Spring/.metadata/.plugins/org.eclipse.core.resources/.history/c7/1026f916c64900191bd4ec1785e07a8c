@@ -1,0 +1,25 @@
+package com.volvo.in.SpringdDemo;
+
+public class Person {
+	
+	private int pid;
+	private String name;
+	
+	public int getPid() {
+		System.out.println("Object is created");
+		return pid;
+	}
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+	public Person() {
+		super();
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

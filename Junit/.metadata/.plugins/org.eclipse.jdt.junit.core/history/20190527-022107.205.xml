@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest (1)" project="Junit4Demo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.statestreet.StringTest" time="0.0">
+    <testcase name="upperCaseTest" classname="com.statestreet.StringTest" time="0.0"/>
+    <testcase name="lengthTest" classname="com.statestreet.StringTest" time="0.0"/>
+  </testsuite>
+</testrun>

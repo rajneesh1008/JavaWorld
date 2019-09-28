@@ -1,0 +1,22 @@
+package com.ibm.app.SpringCore;
+
+import java.util.Arrays;
+
+public class Person {
+
+	private String[] name;
+
+	public void setName(String[] empNames) {
+		this.name = empNames;
+
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + Arrays.toString(name) + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+
+	
+	}
+

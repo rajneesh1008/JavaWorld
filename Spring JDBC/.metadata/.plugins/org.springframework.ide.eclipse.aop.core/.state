@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="JDBCAnnotation"/>
+<aop-project name="MOC"/>
+<aop-project name="MOC_JDBC-16_DaoSupport"/>
+<aop-project name="SimpleJDBCInsert"/>
+<aop-project name="NamedParameterJdbcTemplate"/>
+<aop-project name="SpringJDBC"/>
+<aop-project name="Learning"/>
+</aop-reference-model>

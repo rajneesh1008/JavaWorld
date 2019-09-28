@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Apr 15 00:46:18 IST 2019
+org.eclipse.jst.jee.server\:/binary\:D\:\\Softwares_2018\\JPA\ Software\\2.7.3\\eclipselink\\jlib\\jpa\\org.eclipse.persistence.jpars_2.7.3.v20180807-4be1041.jar=WEB-INF/lib/org.eclipse.persistence.jpars_2.7.3.v20180807-4be1041.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\Softwares_2018\\JPA\ Software\\2.7.3\\eclipselink\\jlib\\jpa\\org.eclipse.persistence.jpars.source_2.7.3.v20180807-4be1041.jar=WEB-INF/lib/org.eclipse.persistence.jpars.source_2.7.3.v20180807-4be1041.jar

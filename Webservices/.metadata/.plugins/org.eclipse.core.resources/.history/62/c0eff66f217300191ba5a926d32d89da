@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<employees>
+		<employee>
+			<eno>1</eno>
+			<name>Anil</name>
+			<salary>10000</salary>
+		</employee>
+		<employee>
+			<eno>2</eno>
+			<name>Bharat</name>
+			<salary>10000</salary>
+		</employee>
+		<employee>
+			<eno>3</eno>
+			<name>Raju</name>
+			<salary>10000</salary>
+		</employee>
+		<employee>
+			<eno>4</eno>
+			<name>Mahesh</name>
+			<salary>10000</salary>
+		</employee>
+	</employees>

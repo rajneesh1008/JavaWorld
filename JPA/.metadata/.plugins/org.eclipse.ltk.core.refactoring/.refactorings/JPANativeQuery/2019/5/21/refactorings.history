@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EntityManagerFactoryUtil.java&apos; to &apos;CriteriaBuilder/src/com.oracle&apos;&#x0D;&#x0A;- Original project: &apos;JPANativeQuery&apos;&#x0D;&#x0A;- Destination element: &apos;CriteriaBuilder/src/com.oracle&apos;&#x0D;&#x0A;- Original element: &apos;com.verizon.EntityManagerFactoryUtil.java&apos;" description="Copy compilation unit" destination="=CriteriaBuilder/src&lt;com.oracle" element1="/src&lt;com.verizon{EntityManagerFactoryUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1558380670497" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package com.infosys;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@Path(value="/employee")
+public class EmployeeService {
+
+//	@GET
+//	@Produces(value= {"application/xml"})
+//	public Employee findEmployee() {
+//		return new Employee(1, "Anil",10000d);
+	@POST
+	public void saveEmployee()
+	{
+		System.out.println("saving emp data");
+	}
+}

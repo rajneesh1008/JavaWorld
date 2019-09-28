@@ -1,0 +1,7 @@
+package com.reflection.annotation.Annotation;
+
+public class COne {
+
+	public void methodOne() {
+	}
+}

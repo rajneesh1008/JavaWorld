@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:41:07 +0530] "GET /MOC1/Emp.jsp HTTP/1.1" 200 714
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:41:46 +0530] "POST /MOC1/EmployeeControllerServlet HTTP/1.1" 200 269
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:46:10 +0530] "GET /MOC1/Emp.jsp HTTP/1.1" 200 764
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:47:10 +0530] "POST /MOC1/EmployeeControllerServlet HTTP/1.1" 200 269
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:55:35 +0530] "GET /MOC1/Emp.jsp HTTP/1.1" 200 764
+0:0:0:0:0:0:0:1 - - [06/May/2019:06:56:07 +0530] "POST /MOC1/EmployeeControllerServlet HTTP/1.1" 200 159

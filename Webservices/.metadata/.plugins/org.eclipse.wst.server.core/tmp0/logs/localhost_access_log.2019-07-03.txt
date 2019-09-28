@@ -1,0 +1,1 @@
+0:0:0:0:0:0:0:1 - - [03/Jul/2019:00:34:18 +0530] "GET /JersyDemo/rest/employee?eno=1&name=Anil&salary=10000 HTTP/1.1" 404 1078

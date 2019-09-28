@@ -1,0 +1,8 @@
+package com.wipro.Util;
+
+import org.springframework.context.annotation.ComponentScan;
+
+@ComponentScan(basePackages="com.wipro")
+public class MOCUtil {
+
+}

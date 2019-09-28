@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringCore_Interface&apos; to &apos;SpringCore_Autowire&apos;" description="Rename resource &apos;SpringCore_Interface&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringCore_Interface" name="SpringCore_Autowire" stamp="1555722827104" updateReferences="true"/>
+</session>

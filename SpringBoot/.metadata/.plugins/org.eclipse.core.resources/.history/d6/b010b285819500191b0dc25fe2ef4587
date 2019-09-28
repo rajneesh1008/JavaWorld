@@ -1,0 +1,8 @@
+package info.inetsolv;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="adp",url="localhost:7001")
+public interface ADPCommunicationProxy {
+
+}

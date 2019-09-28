@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest (2)" project="Junit5Demo" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.statestreet.StringTest" time="0.084" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]">
+    <testcase name="upperCaseTest" classname="com.statestreet.StringTest" time="0.026" displayname="upperCaseTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:upperCaseTest()]"/>
+    <testcase name="nullExceptionTest" classname="com.statestreet.StringTest" time="0.021" displayname="nullExceptionTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:nullExceptionTest()]"/>
+    <testcase name="lengthTest" classname="com.statestreet.StringTest" time="0.036" displayname="lengthTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:lengthTest()]"/>
+  </testsuite>
+</testrun>

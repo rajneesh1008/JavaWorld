@@ -1,0 +1,14 @@
+package com.worldbank.log4j;
+
+import org.apache.log4j.Logger;
+
+public class EmployeeDataRetrieve {
+
+	private final static Logger LOG = Logger.getLogger(EmployeeDataRetrieve.class);
+	public static void main(String[] args) {
+		LOG.info("We are Employee Data");
+
+		
+	}
+
+}

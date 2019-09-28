@@ -1,0 +1,39 @@
+package com.statestreet;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class StringTest {
+
+	@BeforeEach
+	void demo() {
+		System.out.println("we are in demo");
+	}
+
+	@AfterEach
+	void xyz() {
+		System.out.println("after()");
+	}
+
+	@Test
+	void lengthTest() {
+		String name = new String("inetsolv");
+		int length = name.length();
+		assertEquals(8, length);
+	}
+
+	@Test
+	void upperCaseTest() {
+		assertEquals("INETSOLV", new String("inetsolv").toUpperCase());
+
+	}
+	@Test
+    void nullExceptionTest() {
+		String name=null;
+		Assertions.assertThrows(NullPointerException.class,() ->name.length());
+}
+}

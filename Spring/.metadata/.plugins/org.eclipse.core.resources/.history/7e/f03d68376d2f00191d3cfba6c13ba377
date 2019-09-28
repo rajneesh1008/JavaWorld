@@ -1,0 +1,21 @@
+package com.worldbank.log4j;
+
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.Logger;
+import org.apache.log4j.SimpleLayout;
+
+public class EmployeeDataRetrieve {
+
+	public static void main(String[] args) {
+          
+		Logger logger = Logger.getRootLogger();
+		SimpleLayout layout = new SimpleLayout();
+		ConsoleAppender appender = new ConsoleAppender(layout);
+		logger.addAppender(appender);
+		
+		logger.debug("Get debug");
+		
+
+	}
+
+}

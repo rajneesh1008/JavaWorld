@@ -1,0 +1,20 @@
+package com.worldbankgroup.utils;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class NamedParameterJdbcTemplateUtil {
+	
+	@Autowired
+	private DataSource dataSource;
+	
+	@Bean
+	public NamedParameterJdbcTemplateUtil namedParameterJdbcTemplate() {
+		return new NamedParameterJdbcTemplateUtil(dataSource); 
+		
+  }
+}

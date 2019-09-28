@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+<persistence-unit name="springJPA" transaction-type="RESOURSE_LOCAL">
+<class>com.wipro.Employee</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+			<property name="javax.persistence.jdbc.user" value="brainwave"/>
+			<property name="javax.persistence.jdbc.password" value="abc"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,5 @@
+package com.worldbankgroup.utils;
+
+public class NamedParameterJdbcTemplate {
+
+}

@@ -1,0 +1,5 @@
+package com.reflection.core;
+
+public class COne {
+  Class<cone> cls= COne.class;
+}

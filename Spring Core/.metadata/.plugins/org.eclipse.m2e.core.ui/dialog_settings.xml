@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="internal" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Workspace\Spring Core\SpringBeanLifecycle\src\main\java\com\epam\core\SpringBeanLifecycle\Person.java"/>
+			<item value="D:\Workspace\Spring Core\SpringPropertyFile_PropertySource\src\main\java\com\deloitte\SpringPropertyFile_Environment\DataSource.java"/>
+			<item value="D:\Workspace\Spring Core\SpringCore_I18N"/>
+			<item value="D:\Workspace\Spring Core\SpringCore_Autowire\src\main\java\com\aegon\core\SpringCore_Interface\App.java"/>
+			<item value="D:\Workspace\Spring Core\Factorydesign-Annotation\src\main\java\com\infy\factorydesign\Factorydesign_Annotation\App.java"/>
+			<item value="D:\Workspace\Spring Core\SpringCore2\src\main\resources\spring.xml"/>
+			<item value="D:\Workspace\Spring Framework\SpringCore\src\main\resources\spring3.xml"/>
+			<item value="D:\Workspace\Spring Framework\SpringCore\src\main\java\com\ibm\app\SpringCore\App.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.amazon.BeanPostProcessor"/>
+			<item value="com.google.com.PropertyFile_Environment"/>
+			<item value="com.deloitte.SpringPropertyFile_Environment"/>
+			<item value="com.harman.SpringPropertyFile"/>
+			<item value="com.samsung.SpringCore_I18N"/>
+			<item value="com.axon.core.SpringCore_Interface"/>
+			<item value="com.aegon.core.SpringCore_Interface"/>
+			<item value="com.epam.SpringCore5_Annotations"/>
+			<item value="com.cognizant.in.SpringCore4"/>
+		</list>
+		<list key="groupId">
+			<item value="com.amazon"/>
+			<item value="com.google.com"/>
+			<item value="com.deloitte"/>
+			<item value="com.harman"/>
+			<item value="com.samsung"/>
+			<item value="com.axon.core"/>
+			<item value="com.aegon.core"/>
+			<item value="com.epam"/>
+			<item value="com.cognizant.in"/>
+		</list>
+		<list key="artifactId">
+			<item value="BeanPostProcessor"/>
+			<item value="PropertyFile_Environment"/>
+			<item value="SpringPropertyFile_Environment"/>
+			<item value="SpringPropertyFile"/>
+			<item value="SpringCore_I18N"/>
+			<item value="SpringCore_Interface"/>
+			<item value="SpringCore5-Annotations"/>
+			<item value="SpringCore4"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

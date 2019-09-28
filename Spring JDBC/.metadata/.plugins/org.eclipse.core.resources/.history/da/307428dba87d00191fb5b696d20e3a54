@@ -1,0 +1,30 @@
+package com.amazon.Learning;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+
+public class App {
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext(MOCUtil.class);
+		JdbcTemplate jdbcTemplate = container.getBean(JdbcTemplate.class);
+
+		jdbcTemplate.update(new PreparedStatementCreator() {
+
+			@Override
+			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+				PreparedStatement pstmt = con.prepareStatement("select * from EMP_TBL values(?,?,?)");
+				pstmt.setInt(1, 18);
+				pstmt.setString(2, "Modi");
+				pstmt.setDouble(3, 999999);
+				return pstmt;
+			}
+		});
+
+		container.close();
+	}
+}

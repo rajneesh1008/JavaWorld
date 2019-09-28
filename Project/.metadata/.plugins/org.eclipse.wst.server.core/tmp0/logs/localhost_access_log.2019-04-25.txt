@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:31:27 +0530] "GET /MOC/emp.jsp HTTP/1.1" 200 789
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:31:57 +0530] "POST /MOC/InsertEmployeeServlet HTTP/1.1" 200 323
+127.0.0.1 - - [25/Apr/2019:00:36:45 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:36:47 +0530] "GET /MOC/emp.jsp HTTP/1.1" 200 789
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:37:40 +0530] "POST /MOC/InsertEmployeeServlet HTTP/1.1" 200 329
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:39:49 +0530] "POST /MOC/InsertEmployeeServlet HTTP/1.1" 200 320
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:39:52 +0530] "GET /MOC/emp.jsp HTTP/1.1" 200 789
+0:0:0:0:0:0:0:1 - - [25/Apr/2019:00:40:19 +0530] "POST /MOC/InsertEmployeeServlet HTTP/1.1" 200 314

@@ -1,0 +1,5 @@
+package com.estee.core.SpringBean;
+
+public class Person {
+
+}

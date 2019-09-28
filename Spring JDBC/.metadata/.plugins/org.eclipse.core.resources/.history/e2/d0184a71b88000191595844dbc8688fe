@@ -1,0 +1,54 @@
+package com.amazon.DAO;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementSetter;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.stereotype.Repository;
+
+import com.verizon.DTO.Employee;
+
+@Repository
+public class EmployeeDAO {
+
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+
+	public int save(EmployeeDAO employee) {
+		String sql = "insert into EMP_TBL values(?,?,?)";
+		return jdbcTemplate.update(sql, employee.getEno(), employee.getName(), employee.getSalary());
+
+	}
+
+	public EmployeeDAO findByEno(Integer eno) {
+		String sql = "select * from EMP_TBL where eno=?";
+		return jdbcTemplate.query(sql, new PreparedStatementSetter() {
+
+			@Override
+			public void setValues(PreparedStatement ps) throws SQLException {
+				ps.setInt(1, eno);
+
+			}
+		}, new ResultSetExtractor<Employee>() {
+
+			@Override
+			public Employee extractData(ResultSet rs) throws SQLException, DataAccessException {
+				Employee employee = null;
+				if (rs.next()) {
+					employee = new Employee();
+					employee.setEno(rs.getInt("eno"));
+					employee.setName(rs.getString("name"));
+					employee.setSalary(rs.getDouble("salary"));
+				}
+				return employee;
+
+			}
+		});
+
+	}
+}

@@ -1,0 +1,21 @@
+package info.siliconvalley.App;
+
+import java.util.Map;
+
+public class Person {
+	
+	private Map<String,String> states;
+
+	public Map<String, String> getStates() {
+		return states;
+	}
+
+	public void setStates(Map<String, String> states) {
+		this.states = states;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [states=" + states + "]";
+	}
+}

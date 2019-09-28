@@ -1,0 +1,26 @@
+package com.amazon.SpringJDBCResultSetExtractor;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.ResultSetExtractor;
+
+public class EmployeeResultSetExtractor implements ResultSetExtractor<List<Employee>> {
+
+	@Override
+	public List<Employee> extractData(ResultSet rs) throws SQLException, DataAccessException {
+		List<Employee> empList = new ArrayList<Employee>();
+		while (rs.next()) {
+			Employee employee = new Employee();
+			empList.add(employee);
+			employee.setEno(rs.getInt("eno"));
+			employee.setName(rs.getString("namme"));
+			employee.setSalary(rs.getDouble("salary"));
+		}
+		return empList;
+	}
+
+}

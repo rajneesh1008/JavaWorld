@@ -1,0 +1,55 @@
+package com.amazon.Learning;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.RowMapper;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	AnnotationConfigApplicationContext container=new AnnotationConfigApplicationContext(MOCUtil.class);
+    	JdbcTemplate jdbcTemplate = container.getBean(JdbcTemplate.class);
+    	/*String sql="select * from EMP_TBL values(?,?,?)";
+     jdbcTemplate.update(
+    		new PreparedStatementCreator() {
+				
+				@Override
+				public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+					PreparedStatement pstmt = con.prepareStatement(sql);
+					pstmt.setInt(1,21);
+					pstmt.setString(2, "Modi");
+					pstmt.setDouble(3, 999999);
+					return pstmt;
+				}
+			});*/
+    	/*String sql="select max(salary) from EMP_TBL";
+    	Double maxSalary = jdbcTemplate.queryForObject(sql, Double.class);
+    	System.out.println(maxSalary);*/
+    	
+    	String sql="select * from EMP_TBL where eno=5";
+    	Employee employee = jdbcTemplate.queryForObject(sql, 
+    		new RowMapper<Employee>() {
+
+				@Override
+				public Employee mapRow(ResultSet rs, int rowNum) throws SQLException {
+					Employee employee = new Employee();
+					employee.setEno(rs.getInt("eno"));
+					employee.setName(rs.getString("name"));
+					employee.setSalary(rs.getDouble("salary"));
+					return employee;
+				}
+			
+			});
+    	System.out.println(employee.getEno());
+    	System.out.println(employee.getName());
+    	System.out.println(employee.getSalary());
+    	container.close();
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringCore"/>
+<aop-project name="SpringCore2"/>
+<aop-project name="SpringPropertyFile_Annotation"/>
+<aop-project name="SpringCore_Interface"/>
+<aop-project name="BeanPostProcessor"/>
+<aop-project name="SpringPropertyFile_PropertySource"/>
+<aop-project name="SpringBeanLifecycle"/>
+<aop-project name="SpringCore_I18N"/>
+<aop-project name="PropertyFile_Environment"/>
+<aop-project name="instancefactory"/>
+<aop-project name="SpringCore4-Annotations"/>
+<aop-project name="SpringCore5-Annotations"/>
+<aop-project name="BeanLifeCycle2"/>
+</aop-reference-model>

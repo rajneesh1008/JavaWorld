@@ -1,0 +1,4 @@
+03:40:57.892 [main] DEBUG log4j2demo.Employee - Debug initiated
+03:40:57.901 [main] INFO  log4j2demo.Employee - Info Received
+03:41:45.424 [main] DEBUG log4j2demo.Employee - Debug initiated
+03:41:45.429 [main] INFO  log4j2demo.Employee - Info Received

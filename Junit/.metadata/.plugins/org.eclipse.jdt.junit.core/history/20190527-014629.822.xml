@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest" project="Junit Demo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.statestreet.StringTest" time="0.132" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]">
+    <testcase name="upperCaseTest" classname="com.statestreet.StringTest" time="0.025" displayname="upperCaseTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:upperCaseTest()]"/>
+    <testcase name="lengthTest" classname="com.statestreet.StringTest" time="0.107" displayname="lengthTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:lengthTest()]"/>
+  </testsuite>
+</testrun>

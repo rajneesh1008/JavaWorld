@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details Added Successfully</title>
+</head>
+<body>
+Data is stored in Database<br>
+Eno:<%=request.getAttribute("eno") %><br>
+Name:<%=request.getAttribute("name")%><br>
+Salary:<%=request.getAttribute("salary")%><br>
+Gender:<%=request.getAttribute("gender")%><br>
+Address:<%=request.getAttribute("address")%><br>
+<a href="emp.jsp">Add New Employee</a>
+</body>
+</html>

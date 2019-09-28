@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest.upperCaseTest" project="Junit5Demo" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.statestreet.StringTest" time="0.208" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]">
+    <testcase name="upperCaseTest" classname="com.statestreet.StringTest" time="0.208" displayname="upperCaseTest()" uniqueid="[engine:junit-jupiter]/[class:com.statestreet.StringTest]/[method:upperCaseTest()]">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The import org.junit.Assert.assertTh cannot be resolved
+	Syntax error on token "assertTh", ; expected after this token
+	The method assertThrows(Class&lt;NullPointerException&gt;) is undefined for the type StringTest
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert ")" to complete MethodInvocation
+	Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+	Syntax error, insert ";" to complete Statement
+&#13;
+	at com.statestreet.StringTest.&lt;init&gt;(StringTest.java:4)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.newInstance(ReflectionUtils.java:431)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:60)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestClassConstructor(ClassTestDescriptor.java:342)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:289)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:281)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:269)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)&#13;
+	at java.util.Optional.orElseGet(Unknown Source)&#13;
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:82)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:59)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:80)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:80)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:66)&#13;
+	at java.util.ArrayList.forEach(Unknown Source)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)&#13;
+	at java.util.ArrayList.forEach(Unknown Source)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

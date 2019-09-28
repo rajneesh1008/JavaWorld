@@ -1,0 +1,5 @@
+package com.amazon.SpringJdbcRowMapper;
+
+public class EmployeeRowMapper {
+
+}

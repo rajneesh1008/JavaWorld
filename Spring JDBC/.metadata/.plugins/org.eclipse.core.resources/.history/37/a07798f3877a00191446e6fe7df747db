@@ -1,0 +1,35 @@
+package com.verizon.MOCJDBC;
+
+import java.util.Scanner;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.verizon.DTO.Employee;
+import com.verizon.Model.EmployeeService;
+import com.verizon.util.MOCUtil;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	/*Scanner scanner = new Scanner(System.in);
+    	System.out.println("Enter the Eno");
+    	boolean eno = scanner.hasNextInt();
+    	System.out.println("Enter the Name");
+    	String name = scanner.next();
+    	System.out.println("Enter the Salary");
+    	boolean salary = scanner.hasNextDouble();*/
+    	
+    	Employee employee = new Employee();
+    	employee.setEno(163);
+    	employee.setName("Anil");
+    	employee.setSalary(10000d);
+    	
+    	
+    	AnnotationConfigApplicationContext container=new AnnotationConfigApplicationContext(MOCUtil.class);
+    	EmployeeService employeeService = container.getBean(EmployeeService.class);
+    	int noofRecords = employeeService.calTax(employee);
+    	System.out.println(noofRecords);
+    	container.close();
+    }
+}

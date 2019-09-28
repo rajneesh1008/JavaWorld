@@ -1,0 +1,42 @@
+package com.citi.corp.SpringCore7_Annotation;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+
+
+//@Scope(scopeName=ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+//@Lazy(value=true)
+@Configuration
+public class Person {
+	
+	private Integer pid;
+	
+	public void doCheck() {
+	if (pid==null) {
+		throw new RuntimeException();}
+	}
+	public Person() {
+		System.out.println("Person Object is created");
+	}
+
+	public Integer getPid() {
+		return pid;
+	}
+
+	public void setPid(Integer pid) {
+		this.pid = pid;
+		
+		
+			}
+		
+	
+
+	@Override
+	public String toString() {
+		return "Person [pid=" + pid + "]";
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.citi.corp.SpringCore7_Annotation;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+		AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext(MOCUtil.class);
+
+		  container.getBean(Person.class);
+	      
+
+
+
+		((AbstractApplicationContext) container).close();
+
+	}
+
+
+
+    }
+

@@ -1,0 +1,26 @@
+package com.ibm;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+
+	@PostConstruct
+	public void performOperations() {
+		employeeRepository.save(new Employee(96,"Bhavya",47000d));
+
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+
+	}
+
+}

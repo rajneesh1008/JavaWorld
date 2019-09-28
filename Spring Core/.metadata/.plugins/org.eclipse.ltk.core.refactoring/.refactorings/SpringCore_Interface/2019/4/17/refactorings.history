@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MOCUtil.java&apos; to &apos;SpringCore-Interface2/src/main/java/com.oracle.core.SpringCore_Interface&apos;&#x0D;&#x0A;- Original project: &apos;SpringCore_Interface&apos;&#x0D;&#x0A;- Destination element: &apos;SpringCore-Interface2/src/main/java/com.oracle.core.SpringCore_Interface&apos;&#x0D;&#x0A;- Original element: &apos;com.axon.core.SpringCore_Interface.MOCUtil.java&apos;" description="Copy compilation unit" destination="=SpringCore-Interface2/src\/main\/java&lt;com.oracle.core.SpringCore_Interface" element1="/src\/main\/java&lt;com.axon.core.SpringCore_Interface{MOCUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1555879648772" units="1" version="1.0"/>
+</session>
